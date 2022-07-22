@@ -51,6 +51,7 @@ header > nav {
 header > nav > ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-right: 10px;
 }
 
@@ -123,7 +124,7 @@ header > nav a:hover {
 /* Breakpoints */
 
 @media (max-width: 915px) {
-    header > nav > ul {
-        margin-top: 20px;
+    .presentation {
+        margin-top: 100px;
     }
 }
