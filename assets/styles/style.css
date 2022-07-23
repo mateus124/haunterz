@@ -171,6 +171,20 @@ footer {
     padding-bottom: 20px;
 }
 
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1A1624;
+}
+
+::-webkit-scrollbar-thumb {
+    /*background-color: #8b2ce4;*/
+    background-image: linear-gradient(to bottom, #8A2BE2, #9740e9, #4d0492);
+    border-radius: 50px;
+    border: 2px solid #1A1624;
+}
+
 /* Breakpoints */
 
 @media (max-width: 975px) {
