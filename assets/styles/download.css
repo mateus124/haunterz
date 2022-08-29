@@ -245,6 +245,28 @@ header > nav a:hover {
     }
 }
 
+/* FAQ */
+
+.faq {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.faq > h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+span.title {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.faq > div {
+    margin: 20px 0;
+}
+
 
 /* Footer */
 
