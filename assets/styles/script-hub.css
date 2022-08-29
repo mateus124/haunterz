@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --fonte: 'Baloo Tamma 2', arial, helvetica, sans-serif;
+    --magenta: #8A2BE2;
+    --magenta2: #8b2ce4;
+}
+
+/* Formatações */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fonte);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    height: 18vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .icon {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header > .icon > h1 {
+    margin-left: 10px;
+    color: var(--magenta);
+}
+
+header > nav {
+    display: flex;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+header > nav a {
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--magenta);
+    cursor: pointer;
+}
+
+header > nav a:hover {
+    border: 2px solid #bc4ed8;
+    box-shadow: 1px 2px 5px #892be279;
+    transition: .3s;
+    color: white;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburguer > span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
