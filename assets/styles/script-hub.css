@@ -189,10 +189,22 @@ aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 20px;
+    row-gap: 30px;
 }
 
 .script-card {
     text-align: center;
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: inline;
+}
+
+.script-card > img {
+    border-radius: 8px;
 }
 
 /* Scrollbar */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <title>Script Hub</title>
     <link rel="stylesheet" href="../assets/styles/script-hub.css">
     <script src="../assets/js/script.js" defer></script>
@@ -49,11 +49,15 @@
     </main>
 
     <aside class="script-hub">
-        <div class="script-card" style="border: none; background-color: transparent; color: #FFF; font-size: 1.2em; cursor: pointer; display: inline;" onclick="onepiece1()">
+        <div class="script-card" onclick="scripta('blox1')">
             <img src="https://i.ytimg.com/vi/cv3FzTtsysM/maxresdefault.jpg" alt="script blox fruits" width="350" height="200" style="border-radius: 8px;">
             <p>Script <strong>Blox Fruits</strong> 1.17.3</p>
         </div>
         
+        <div class="script-card" onclick="scripta('shindo1')">
+            <img src="https://i.ytimg.com/vi/9B_YDyaa_X8/maxresdefault.jpg" alt="script shindo life" width="350" height="200">
+            <p>Script <strong>Shindo Life</strong></p>
+        </div>
     </aside>
 
     <script>
@@ -67,8 +71,18 @@
             alert("Script copiado com sucesso!");
         }
 
-        function onepiece1() {
-            script.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI%27'))()";
+        function scripta(a) {
+            let sc = a;
+            
+            switch(sc) {
+                case 'blox1':
+                    script.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI%27'))()";
+                break;
+
+                case 'shindo1':
+                    script.value = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()';
+                break;
+            }
         }
     </script>
 </body>
