@@ -89,3 +89,197 @@ header > nav a:hover {
     background-color: white;
     transition: all .3s ease-in-out;
 }
+
+/*forms*/
+
+main {
+    padding-bottom: 20px;
+    border-bottom: 5px solid #7f09ee;
+}
+
+aside {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/gamesgrid.jpg');
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+/* Introduction */
+
+.introduction {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+
+.introduction > h1 {
+    font-size: 1.7em;
+}
+
+/* howuse */
+
+.howuse {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: justify;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.howuse > h1 {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+/*script-main*/
+
+.script-main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.script-main input, button {
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+}
+
+.script-main input {
+    background-color: #131E2F;
+    color: #FFF;
+    width: 500px;
+}
+
+.script-main input:focus {
+    outline: none;
+}
+
+.script-main button {
+    margin-left: 10px;
+    background-color: var(--magenta);
+    color: #0C020B;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.script-main button:hover {
+    background-color: #0C020B;
+    color: var(--magenta);
+    border: 1px solid var(--magenta);
+    box-shadow: 0px 0px 8px var(--magenta);
+    transition: 0.3s;
+}
+
+/* script hub */
+
+.script-hub {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.script-card {
+    text-align: center;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1A1624;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #8A2BE2, #9740e9, #4d0492);
+    border-radius: 50px;
+    border: 2px solid #1A1624;
+}
+
+/* Breakpoints */
+
+@media (max-width: 975px) {
+    header > .icon, header > nav {
+        margin: 10px auto;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 655px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active span:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active span:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 18vh;
+        border-radius: 0 0 20px 20px;
+        background-color: #1A1624;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: .3s;
+    }
+
+    .nav-menu > li {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    header > .icon, header > nav {
+        margin: 0;
+    }
+
+    .script-main input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 465px) {
+    .script-main {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items:center;
+    }
+
+    .script-main button {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 375px) {
+    .icon > h1 {
+        display: none;
+    }
+}

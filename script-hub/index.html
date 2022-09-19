@@ -32,7 +32,44 @@
     </header>
 
     <main>
-        
+        <section class="introduction">
+            <h1>Script Hub</h1>
+            <p>Nessa área você encontrará diversos scripts aprovados pela equipe da Haunter Z, tanto em parcerias como em utilizações diárias. Que são julgados como os melhore da atualidade, e sempre serão atualizados constantemente, sem que você se preucupe com versão do script/game que irá utilizar.</p>
+        </section>
+
+        <section class="howuse">
+            <h1>Como usar</h1>
+            <p>Para utilizar o script hub da forma correta, basta descer até onde se encontram as postagens de script, serão encontradas imagens e a descrição de cada script, ao clicar em algum deles, o campo de texto abaixo será alterado com o código do script, após isso, basta clicar no botão "Copiar" e utilizar seu script no executor da Haunter Z!</p>
+        </section>
+
+        <section class="script-main">
+            <input type="text" name="script" id="script" value="Escolha um dos scripts abaixo!">
+            <button onclick="copiarscript()">Copiar</button>
+        </section>
     </main>
+
+    <aside class="script-hub">
+        <div class="script-card" style="border: none; background-color: transparent; color: #FFF; font-size: 1.2em; cursor: pointer; display: inline;" onclick="onepiece1()">
+            <img src="https://i.ytimg.com/vi/cv3FzTtsysM/maxresdefault.jpg" alt="script blox fruits" width="350" height="200" style="border-radius: 8px;">
+            <p>Script <strong>Blox Fruits</strong> 1.17.3</p>
+        </div>
+        
+    </aside>
+
+    <script>
+        const script = document.getElementById('script');
+
+        function copiarscript() {
+            let textoCopiado = document.getElementById("script");
+            textoCopiado.select();
+            textoCopiado.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Script copiado com sucesso!");
+        }
+
+        function onepiece1() {
+            script.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI%27'))()";
+        }
+    </script>
 </body>
 </html>
